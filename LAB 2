@@ -42,7 +42,7 @@ void infixtopostfix()
             case'-':
             case'*':
             case'/':
-            case'^':while(pred(stack[top])>+pred(symbol))
+            case'^':while(pred(stack[top])>=pred(symbol))
             {
                 temp=pop();
                 postfix[pos++]=temp;
