@@ -50,7 +50,7 @@ void toh(int n, char s, char t, char d){
     }
     else{
         toh(n-1, s, d, t);
-        printf("Move %d disc from %c to %c \n", n-1,t,s, d);
+        printf("Move %d disc from %c to %c \n", n,s, d);
         toh(n-1, t, s, d);
     }
 }
